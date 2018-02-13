@@ -1,5 +1,6 @@
 const assert = require('assert');
 const Park = require('../park.js');
+const Dinosaur = require('../dinosaur.js')
 
 describe('Park', function (){
 
@@ -8,8 +9,28 @@ describe('Park', function (){
   beforeEach(function(){
     park = new Park();
   });
+
   it('should start with an empty enclosure', function(){
     const actual = park.enclosure;
     assert.deepStrictEqual(actual, []);
+  });
+
+  describe('Dinosaur', function(){
+
+    let dinosaur;
+
+    beforeEach(function(){
+      dinosaur = new Dinosaur('Pteradactyl', 3);
+    });
+
+    it('should have a type', function(){
+      const actual = dinosaur.type;
+      assert.strictEqual(actual, 'Pteradactyl');
+    });
+
+    it('should have an annualOffspring number', function(){
+      const actual = dinosaur.annualOffspring;
+      assert.strictEqual(actual, 3)
+    });
   });
 });
