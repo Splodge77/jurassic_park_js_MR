@@ -1,0 +1,22 @@
+{
+  "name": "jurassic_park",
+  "version": "1.0.0",
+  "description": "",
+  "main": "park.js",
+  "scripts": {
+    "test": "mocha specs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Splodge77/jurassic_park_js_MR.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Splodge77/jurassic_park_js_MR/issues"
+  },
+  "homepage": "https://github.com/Splodge77/jurassic_park_js_MR#readme",
+  "devDependencies": {
+    "mocha": "^5.0.0"
+  }
+}
