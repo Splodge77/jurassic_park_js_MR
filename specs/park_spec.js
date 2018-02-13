@@ -15,6 +15,12 @@ describe('Park', function (){
     assert.deepStrictEqual(actual, []);
   });
 
+  it('should be able to add a dinosaur', function(){
+    park.addDinosaur('T-Rex',2);
+    const actual = park.enclosure.length;
+    assert.strictEqual(actual, 1);
+  })
+
   describe('Dinosaur', function(){
 
     let dinosaur;
