@@ -16,10 +16,21 @@ describe('Park', function (){
   });
 
   it('should be able to add a dinosaur', function(){
-    park.addDinosaur('T-Rex',2);
+    park.addDinosaur('T-Rex', 2);
     const actual = park.enclosure.length;
     assert.strictEqual(actual, 1);
-  })
+  });
+
+  // it('should be able to remove all dinosaurs of a particular type', function(){
+  //   // park.addDinosaur('T-Rex', 2);
+  //   park.addDinosaur('T-Rex', 2);
+  //   park.addDinosaur('Velociraptor', 12);
+  //   park.removeOfType('T-Rex');
+  //   const actual = park.enclosure.length;
+  //   assert.strictEqual(actual, 1);
+  // });
+
+  it
 
   describe('Dinosaur', function(){
 
